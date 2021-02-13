@@ -1,0 +1,89 @@
+/* ==========================================  */
+/*                   Planos                    */
+/* ==========================================  */
+
+.planos {
+    background: $cor-auxiliar;
+  }
+  
+  .planos h2 {
+    color: $cor-branca;
+  }
+  
+  .plano {
+    background: $cor-branca;
+    width: retorna-medida(18);
+    display: inline-block;
+    margin: 1em 0 0 1.4em;
+    padding-bottom: 2em;
+    @media #{$mq-mobile} {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 2em 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .plano:hover {
+    background: #dedede;
+  }
+  
+  .plano h3 {
+    color: $cor-branca;
+    font-size: 1.8em;
+    background: $cor-padrao;
+    text-align: center;
+    height: 2em;
+    padding-top: .6em;
+    margin-top: 0;
+    width: 100%;
+  }
+  
+  .plano div {
+    text-align: center;
+    color: $cor-padrao;
+    font-size: 2.75em;
+  }
+  
+.itens-plano {
+    padding-left: 1.2em;
+    @media #{$mq-mobile} {
+      padding-left: 0;
+    }
+    li {
+        font-size: 1em;
+        list-style: none;
+        border-bottom: 1px solid #acacac;
+        padding: .5em;
+        width: 14.8em;
+        &:last-child {
+            border: 0;
+        }
+    }
+    span {
+        float: right;
+    }   
+}
+  
+.plano button {
+    background: $cor-padrao;
+    border: 0;
+    color: $cor-branca;
+    width: 210px;
+    height: 38px;
+    font-size: 1.2em;
+    @include border-radius(10px); // Compass
+    @include box-shadow(black 0 2px 5px); // Compass
+    margin-left: 2em;
+    @media #{$mq-mobile} {
+      margin-left: 0;
+    }
+}
+  
+@include all-check-sprites;
+.check-icone-ok, .check-icone-not {
+  width: 19px;
+  height: 19px;
+} 

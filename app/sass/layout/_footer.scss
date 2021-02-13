@@ -1,0 +1,136 @@
+/* ==========================================  */
+/*                  Footer                    */
+/* ==========================================  */
+
+footer {
+    display: block;
+    position: relative;
+  }
+  
+  footer::after {
+    content: "";
+    background: url(../images/fundo-rodape.png);
+    opacity: .02;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  footer::before {
+    content: "";
+    background: $cor-auxiliar;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  footer .container {
+    $tamanho-fonte: 16px; // variavel local
+    padding-top: 3 * $tamanho-fonte;
+    height: 6.5 * $tamanho-fonte;
+    position: relative;
+    @media #{$mq-mobile} {
+      height: auto;
+      position: static;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  footer .container img {
+    width: 250px;
+    @media #{$mq-mobile} {
+      margin-bottom: 1em;
+      width: auto;
+    }
+  }
+  
+  .menu-rodape,
+  .social {
+    position: absolute;
+    @media #{$mq-mobile} {
+      position: static;
+      width: 100%;
+    }
+  }
+
+  .menu-rodape ul {
+    padding-inline-start: 0;
+    @media #{$mq-mobile} {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
+  .menu-rodape ul li {
+    display: inline-block;
+    margin-left: 2em;
+    @media #{$mq-mobile} {
+      margin-right: 0.5em;
+      margin-left: 0;
+    }
+  }
+  
+  .menu-rodape {
+    top: 1em;
+    right: 0;
+  }
+  
+  .social {
+    bottom: 0;
+    right: 0;
+    @media #{$mq-mobile} {
+      padding-inline-start: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
+  .menu-rodape li,
+  .social li {
+    display: inline;
+  }
+  
+  footer a {
+    color: $cor-branca;
+    text-decoration: none;
+  }
+  
+  .social li {
+    float: left;
+  }
+  
+  .social li a {
+    display: block;
+    width: 55px;
+    height: 55px;
+    @extend %image-replacement;
+    margin-left: 1em;
+    @media #{$mq-mobile} {
+      margin-left: 0;
+    }
+  }
+  
+  .social a {
+    background-position: top;
+    background-size: 50px 50px;
+  }
+  
+  .social a[href*="facebook"] {
+    background-image: url(../images/facebook.png);
+  }
+  
+  .social a[href*="twitter"] {
+    background-image: url(../images/twitter.png);
+  }
+  
+  .social a[href*="instagram"] {
+    background-image: url(../images/instagram.png);
+  }

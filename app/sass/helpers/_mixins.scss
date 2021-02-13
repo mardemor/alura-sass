@@ -1,0 +1,20 @@
+// Mixins Sass
+@mixin borda-arredondada($raio: 10px) {
+    border-radius: $raio;
+    -webkit-border-radius: $raio;
+}
+
+%image-replacement {
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+%sombra-padrao {
+    box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
+
+@function retorna-medida($multiplicador) {
+    @return $multiplicador * 16px;
+}
