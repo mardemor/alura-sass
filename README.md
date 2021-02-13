@@ -1,6 +1,6 @@
 # Curso Alura Sass e Compass
 
-<p>Projeto desenvolvido como parte do curso <b>Sass e Compass</b> da escola <a href="https://www.alura.com.br/">Alura</a>, ministrado pelo professor Natan Souza.</p>
+<p>Projeto desenvolvido como parte do curso <b>Sass e Compass</b> da escola <a href="https://www.alura.com.br/">Alura</a>, ministrado pelo instrutor Natan Souza.</p>
 <p>O curso teve carga horária de 8 horas e abrange os seguintes tópicos:</p>
 
 <li>Ambiente - instalação</li>
