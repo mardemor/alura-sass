@@ -16,4 +16,4 @@
 <li>Operações matemáticas</li>
 <li>Boas práticas e conselhos</li>
 </ul>
-<p>Acesse o <a href="https://mardemor.github.io/alura-sass" target="_blank">site</a> do projeto.</p>
+<p>Acesse o <a href="https://mardemor.github.io/alura-sass/">site</a> do projeto.</p>
